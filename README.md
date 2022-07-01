@@ -24,32 +24,30 @@ limitations under the License.
 
 > Test if a value is a [BigUint64Array][mdn-biguint64array].
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/assert-is-biguint64array
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm` branch][esm-url].
+-   If you are using Deno, visit the [`deno` branch][deno-url].
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd` branch][umd-url].
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
-To use in Observable,
-
 ```javascript
-isBigUint64Array = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-biguint64array@umd/bundle.js' )
-```
-
-To include the bundle in a webpage,
-
-```html
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-biguint64array@umd/bundle.js"></script>
-```
-
-If no recognized module system is present, access bundle contents via the global scope:
-
-```html
-<script type="text/javascript">
-(function () {
-    window.isBigUint64Array;
-})();
-</script>
+var isBigUint64Array = require( '@stdlib/assert-is-biguint64array' );
 ```
 
 #### isBigUint64Array( value )
@@ -78,22 +76,17 @@ bool = isBigUint64Array( [] );
 
 <!-- eslint-disable stdlib/require-globals, no-undef -->
 
-```html
-<!DOCTYPE html>
-<html lang="en">
-<body>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/array-int8@umd/bundle.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/array-uint8@umd/bundle.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/array-uint8c@umd/bundle.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/array-int16@umd/bundle.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/array-uint16@umd/bundle.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/array-int32@umd/bundle.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/array-uint32@umd/bundle.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/array-float32@umd/bundle.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/array-float64@umd/bundle.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-biguint64array@umd/bundle.js"></script>
-<script type="text/javascript">
-(function () {
+```javascript
+var Int8Array = require( '@stdlib/array-int8' );
+var Uint8Array = require( '@stdlib/array-uint8' );
+var Uint8ClampedArray = require( '@stdlib/array-uint8c' );
+var Int16Array = require( '@stdlib/array-int16' );
+var Uint16Array = require( '@stdlib/array-uint16' );
+var Int32Array = require( '@stdlib/array-int32' );
+var Uint32Array = require( '@stdlib/array-uint32' );
+var Float32Array = require( '@stdlib/array-float32' );
+var Float64Array = require( '@stdlib/array-float64' );
+var isBigUint64Array = require( '@stdlib/assert-is-biguint64array' );
 
 var bool = isBigUint64Array( new BigUint64Array( 10 ) );
 // returns true
@@ -133,11 +126,6 @@ bool = isBigUint64Array( {} );
 
 bool = isBigUint64Array( null );
 // returns false
-
-})();
-</script>
-</body>
-</html>
 ```
 
 </section>
@@ -223,6 +211,7 @@ Copyright &copy; 2016-2022. The Stdlib [Authors][stdlib-authors].
 [deno-url]: https://github.com/stdlib-js/assert-is-biguint64array/tree/deno
 [umd-url]: https://github.com/stdlib-js/assert-is-biguint64array/tree/umd
 [esm-url]: https://github.com/stdlib-js/assert-is-biguint64array/tree/esm
+[branches-url]: https://github.com/stdlib-js/assert-is-biguint64array/blob/main/branches.md
 
 [stdlib-license]: https://raw.githubusercontent.com/stdlib-js/assert-is-biguint64array/main/LICENSE
 
@@ -230,7 +219,7 @@ Copyright &copy; 2016-2022. The Stdlib [Authors][stdlib-authors].
 
 <!-- <related-links> -->
 
-[@stdlib/assert/is-bigint64array]: https://github.com/stdlib-js/assert-is-bigint64array/tree/umd
+[@stdlib/assert/is-bigint64array]: https://github.com/stdlib-js/assert-is-bigint64array
 
 <!-- </related-links> -->
 
