@@ -42,7 +42,7 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import isBigUint64Array from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-biguint64array@esm/index.mjs';
+import isBigUint64Array from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-biguint64array@v0.1.1-esm/index.mjs';
 ```
 
 #### isBigUint64Array( value )
@@ -86,7 +86,7 @@ import Int32Array from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-int32@esm/in
 import Uint32Array from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-uint32@esm/index.mjs';
 import Float32Array from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-float32@esm/index.mjs';
 import Float64Array from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-float64@esm/index.mjs';
-import isBigUint64Array from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-biguint64array@esm/index.mjs';
+import isBigUint64Array from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-biguint64array@v0.1.1-esm/index.mjs';
 
 var bool = isBigUint64Array( new BigUint64Array( 10 ) );
 // returns true
