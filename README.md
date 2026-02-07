@@ -42,6 +42,11 @@ limitations under the License.
 ## Usage
 
 ```javascript
+import isBigUint64Array from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-biguint64array@esm/index.mjs';
+```
+The previous example will load the latest bundled code from the esm branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/assert-is-biguint64array/tags). For example,
+
+```javascript
 import isBigUint64Array from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-biguint64array@v0.2.3-esm/index.mjs';
 ```
 
@@ -86,7 +91,7 @@ import Int32Array from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-int32@esm/in
 import Uint32Array from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-uint32@esm/index.mjs';
 import Float32Array from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-float32@esm/index.mjs';
 import Float64Array from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-float64@esm/index.mjs';
-import isBigUint64Array from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-biguint64array@v0.2.3-esm/index.mjs';
+import isBigUint64Array from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-biguint64array@esm/index.mjs';
 
 var bool = isBigUint64Array( new BigUint64Array( 10 ) );
 // returns true
